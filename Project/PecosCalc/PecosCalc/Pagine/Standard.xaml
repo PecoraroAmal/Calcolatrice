@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PecosCalc.Pagine.Standard"
+             xmlns:Local="clr-namespace:PecosCalc"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="Standard">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../../Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid BackgroundColor="{DynamicResource bgColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="125" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="Espressione" Grid.Row="0" Text="" BackgroundColor="Transparent" TextColor="{DynamicResource fgColor}" HorizontalTextAlignment="End" VerticalTextAlignment="Center" FontSize="30"/>
+        <Label x:Name="Testo" Grid.Row="1" Text="" BackgroundColor="Transparent" TextColor="{DynamicResource fgColor}"  HorizontalTextAlignment="End" VerticalTextAlignment="Center" FontSize="60"/>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="2" Grid.Column="0" Text="MC" FontSize="20" Clicked="MC" BackgroundColor="Gray" TextColor="Black" Opacity="0.8" CornerRadius="10" Padding="10" Margin="3"/>
+            <Button Grid.Row="2" Grid.Column="1" Text="MR" FontSize="20" Clicked="MR" BackgroundColor="Gray" TextColor="Black" Opacity="0.8" CornerRadius="10" Padding="10" Margin="3"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="M+" FontSize="20" Clicked="Mp" BackgroundColor="Gray" TextColor="Black" Opacity="0.8" CornerRadius="10" Padding="10" Margin="3"/>
+            <Button Grid.Row="2" Grid.Column="3" Text="M-" FontSize="20" Clicked="Mm" BackgroundColor="Gray" TextColor="Black" Opacity="0.8" CornerRadius="10" Padding="10" Margin="3"/>
+            <Button Grid.Row="2" Grid.Column="4" Text="MS" FontSize="20" Clicked="MS" BackgroundColor="Gray" TextColor="Black" Opacity="0.8" CornerRadius="10" Padding="10" Margin="3"/>
+            <Button Grid.Row="2" Grid.Column="5" Text="M" FontSize="20" Clicked="M" BackgroundColor="Gray" TextColor="Black" Opacity="0.8" CornerRadius="10" Padding="10" Margin="3"/>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Text="%" FontSize="40" Clicked="Percento" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="0" Grid.Column="1" Text="CE" FontSize="40" Clicked="CE" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="0" Grid.Column="2" Text="C" FontSize="40" Clicked="C" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="0" Grid.Column="3" Text="←" FontSize="40" Clicked="Cancella" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+
+            <Button Grid.Row="1" Grid.Column="0" Text="1/x" FontSize="40" Clicked="Reciproco" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="1" Grid.Column="1" Text="x²" FontSize="40" Clicked="Quadrato" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="1" Grid.Column="2" Text="√x" FontSize="40" Clicked="Radice" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="1" Grid.Column="3" Text="÷" FontSize="40" Clicked="Diviso" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+
+            <Button Grid.Row="2" Grid.Column="0" Text="7" FontSize="40" Clicked="Numero" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="2" Grid.Column="1" Text="8" FontSize="40" Clicked="Numero" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="2" Grid.Column="2" Text="9" FontSize="40" Clicked="Numero" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="2" Grid.Column="3" Text="x" FontSize="40" Clicked="Per" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+
+            <Button Grid.Row="3" Grid.Column="0" Text="4" FontSize="40" Clicked="Numero" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="3" Grid.Column="1" Text="5" FontSize="40" Clicked="Numero" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="3" Grid.Column="2" Text="6" FontSize="40" Clicked="Numero" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="3" Grid.Column="3" Text="-" FontSize="40" Clicked="Meno" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+
+            <Button Grid.Row="4" Grid.Column="0" Text="1" FontSize="40" Clicked="Numero" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="4" Grid.Column="1" Text="2" FontSize="40" Clicked="Numero" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="4" Grid.Column="2" Text="3" FontSize="40" Clicked="Numero" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="4" Grid.Column="3" Text="+" FontSize="40" Clicked="Piu" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+
+            <Button Grid.Row="5" Grid.Column="0" Text="±" FontSize="40" Clicked="Opposto" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="5" Grid.Column="1" Text="0" FontSize="40" Clicked="Numero" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="5" Grid.Column="2" Text="," FontSize="40" Clicked="Virgola" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+            <Button Grid.Row="5" Grid.Column="3" Text="=" FontSize="40" Clicked="Uguale" BackgroundColor="Gray" TextColor="Black" Opacity="1" CornerRadius="50" Padding="10" Margin="3" />
+
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,62 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PecosCalc.Pagine.Impostazioni"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="Impostazioni">
+    <Grid BackgroundColor="{DynamicResource bgColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="Seleziona un tema" FontSize="40" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" TextColor="{DynamicResource fgColor}" Margin="10,0,0,0"/>
+
+        <Label Text="Scuro" FontSize="30" HorizontalTextAlignment="Start" Grid.Column="0" Grid.Row="1" TextColor="{DynamicResource fgColor}" Margin="10,0,0,0"/>
+        <Switch x:Name="switchScuro" Grid.Column="1" Grid.Row="1" Toggled="Switching"/>
+<!--BoxView-->
+        <Label Text="Chiaro" FontSize="30" HorizontalTextAlignment="Start" Grid.Column="0" Grid.Row="2" TextColor="{DynamicResource fgColor}" Margin="10,0,0,0"/>
+        <Switch x:Name="switchChiaro" Grid.Column="1" Grid.Row="2" Toggled="Switching"/>
+        
+        <Label Text="Rosso" FontSize="30" HorizontalTextAlignment="Start" Grid.Column="0" Grid.Row="3" TextColor="{DynamicResource fgColor}" Margin="10,0,0,0"/>
+        <Switch x:Name="switchRosso" Grid.Column="1" Grid.Row="3" Toggled="Switching"/>
+
+        <Label Text="Blu" FontSize="30" HorizontalTextAlignment="Start" Grid.Column="0" Grid.Row="4" TextColor="{DynamicResource fgColor}" Margin="10,0,0,0"/>
+        <Switch x:Name="switchBlu" Grid.Column="1" Grid.Row="4" Toggled="Switching"/>
+
+        <Label Text="Rosa" FontSize="30" HorizontalTextAlignment="Start" Grid.Column="0" Grid.Row="5" TextColor="{DynamicResource fgColor}" Margin="10,0,0,0"/>
+        <Switch x:Name="switchRosa" Grid.Column="1" Grid.Row="5" Toggled="Switching"/>
+
+        <Label Text="Giallo" FontSize="30" HorizontalTextAlignment="Start" Grid.Column="0" Grid.Row="6" TextColor="{DynamicResource fgColor}" Margin="10,0,0,0"/>
+        <Switch x:Name="switchGiallo" Grid.Column="1" Grid.Row="6" Toggled="Switching"/>
+
+        <Label Text="Verde" FontSize="30" HorizontalTextAlignment="Start" Grid.Column="0" Grid.Row="7" TextColor="{DynamicResource fgColor}" Margin="10,0,0,0"/>
+        <Switch x:Name="switchVerde" Grid.Column="1" Grid.Row="7" Toggled="Switching"/>
+
+        <Label Text="Viola" FontSize="30" HorizontalTextAlignment="Start" Grid.Column="0" Grid.Row="8" TextColor="{DynamicResource fgColor}" Margin="10,0,0,0"/>
+        <Switch x:Name="switchViola" Grid.Column="1" Grid.Row="8" Toggled="Switching"/>
+
+        <Label Text="Oro" FontSize="30" HorizontalTextAlignment="Start" Grid.Column="0" Grid.Row="9" TextColor="{DynamicResource fgColor}" Margin="10,0,0,0"/>
+        <Switch x:Name="switchOro" Grid.Column="1" Grid.Row="9" Toggled="Switching"/>
+
+        <Label Text="Arancione" FontSize="30" HorizontalTextAlignment="Start" Grid.Column="0" Grid.Row="10" TextColor="{DynamicResource fgColor}" Margin="10,0,0,0"/>
+        <Switch x:Name="switchArancione" Grid.Column="1" Grid.Row="10" Toggled="Switching"/>
+
+        <Label Text="Marrone" FontSize="30" HorizontalTextAlignment="Start" Grid.Column="0" Grid.Row="11" TextColor="{DynamicResource fgColor}" Margin="10,0,0,0"/>
+        <Switch x:Name="switchMarrone" Grid.Column="1" Grid.Row="11" Toggled="Switching"/>
+        
+        <Label Text="Azzurro" FontSize="30" HorizontalTextAlignment="Start" Grid.Column="0" Grid.Row="12" TextColor="{DynamicResource fgColor}" Margin="10,0,0,0"/>
+        <Switch x:Name="switchAzzurro" Grid.Column="1" Grid.Row="12" Toggled="Switching"/>
+    </Grid>
+</ContentPage>

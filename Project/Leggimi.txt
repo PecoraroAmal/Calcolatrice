@@ -1,0 +1,14 @@
+Creare un progetto di Visual Studio per MAUI con .NET 8. 
+Il progetto potrà avere un nome qualsiasi, ad esempio, MyCalc, SuperCalc, etc., ma è importante che nelle impostazioni del progetto
+ognuno utilizzi un ApplicationId, scritto come it.issgreppi.cognome-nome. Ad esempio:
+<!-- App Identifier -->
+<ApplicationId>it.issgreppi.malafronte-gennaro</ApplicationId>
+IMPORTANTE! la modifica dell'App Id dovrebbe essere una delle prime cose da fare, perché, fatta in seguito potrebbe comportare problemi di compilazione dell'app.
+
+La soluzione di Visual Studio andrà creata nella cartella Project
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+immagine calc: https://icons8.com/icons/set/calculator
+immagine keqing icon calc: https://www.pinterest.it/pin/377880224999766757/

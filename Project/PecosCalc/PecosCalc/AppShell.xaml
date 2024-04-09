@@ -1,0 +1,38 @@
+<Shell
+    x:Class="PecosCalc.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PecosCalc.Pagine"
+    Shell.FlyoutBehavior="Flyout"
+    Title="PecosCalc"    
+    FlyoutIcon="Resources/menu.png">
+    <Shell.FlyoutBackdrop>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="{DynamicResource bgColor}" Offset="1"/>
+        </LinearGradientBrush>
+    </Shell.FlyoutBackdrop>
+    <ShellContent 
+        Title="Standard"
+        ContentTemplate="{DataTemplate local:Standard}"
+        Route="Standard"/>
+    <FlyoutItem Title="Scientifica">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:Scientifica}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Cronologia">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:Cronologia}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Impostazioni">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:Impostazioni}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Informazioni">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:Informazioni}" />
+        </Tab>
+    </FlyoutItem>
+</Shell>

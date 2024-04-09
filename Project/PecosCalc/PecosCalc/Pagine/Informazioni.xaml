@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PecosCalc.Pagine.Informazioni"
+             Title="Informazioni">
+    <VerticalStackLayout BackgroundColor="{DynamicResource bgColor}" HorizontalOptions="Center" Spacing="10">
+        <!-- Aggiunto Spacing -->
+
+        <Label 
+            Text="PecosCalc"
+            TextColor="{DynamicResource fgColor}"
+            FontSize="Title"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Margin="5,20,0,0"/>
+        <Label 
+            Text="Pecoraro Amal:"
+            TextColor="{DynamicResource fgColor}"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Margin="5,20,0,0"/>
+        <Label
+            Text="Studente del 4° anno presso l'Istituto Superiore Alessandro Greppi di Monticello Brianza"
+            TextColor="{DynamicResource fgColor}"
+            FontSize="20"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start"
+            Margin="5,20,0,0">            
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="VG" />
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label
+            Text="Licenza d'uso: MIT"
+            TextColor="{DynamicResource fgColor}"
+            FontSize="15"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start"
+            Margin="5,20,0,0"/>
+
+        <Label
+            Text="Librerie utilizzate: CommunityToolkit.Maui, Matheval"
+            TextColor="{DynamicResource fgColor}"
+            FontSize="15"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start"
+            Margin="5,20,0,0"/>
+        <Label Text="Icona: https://www.pinterest.it/pin/377880224999766757/"
+            TextColor="{DynamicResource fgColor}"
+            FontSize="15"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start"
+            Margin="5,20,0,0">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Icon" />
+            </Label.GestureRecognizers>
+        </Label>
+    </VerticalStackLayout>
+</ContentPage>
